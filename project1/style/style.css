@@ -1,0 +1,56 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+header {
+    height: 40px;
+    font-size: 24px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+}
+h2 {
+    margin: 20px 0 20px 20px;
+}
+ul {
+    margin-left: 20px;
+}
+li {
+    font-size: 20px;
+}
+table {
+    border: 1px solid black;
+    margin-left: 20px;
+}
+th, td {
+    font-size: 20px;
+    border: 1px solid black;
+    padding: 10px 15px;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+}
+.item {
+    width: 80px;
+    height: 60px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 10px;
+}
+.item-1 {
+    background-image: url(../images/1200px-Arsenal_FC.svg.png);
+}
+.item-2 {
+    background-image: url(../images/1200px-FC_Liverpool.svg.png);
+}
+.item-3 {
+    background-image: url(../images/Manchester_United.png);
+}
+.item-4 {
+    background-image: url(../images/Chelsea.png);
+}
+.flag {
+    background-image: url(../images/england.jpg);
+}
