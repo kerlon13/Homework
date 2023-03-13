@@ -21,14 +21,15 @@ console.log(fun(10,5))
 /* 3. Напишите функцию power, которая принимает два числовых аргумента 
 (основание степени и саму степень) и возвращает число в указанной степени. 
 Значение степени должно быть указано по умолчанию 2.*/
-const pow = 2
-function power(num,pow){
+//const pow = 2
+function power(num,pow = 2){
     return num**pow
 }
-console.log(power(3,pow))
+console.log(power(3))
 // 4. Напишите функцию, которая принимает числовой аргумент n и считает сумму чисел от 1 до n.
-let sum = 0
+
 function fun3(n) {
+    let sum = 0
     for(let i=1;i<=n;i++){
         sum += i
     }  
@@ -41,6 +42,7 @@ console.log(fun3(15))
 let sumEven = 0
 let sumOdd = 0
 function fun4(n1,m1) {
+    
     let min1 = Math.min(n1,m1)
     let max1 = Math.max(n1,m1)
     for(let i=min1;i<=max1;i++) {
@@ -59,19 +61,18 @@ console.log(sumOdd)
 Если есть несколько одинаковых по длине элементов - функция возвращает первый из этих элементов.
 Пример: [ 'one', 'two', 'three' ] => 'three'*/
 let arr = ['one', 'two', 'three']
-let j = 0
 function fun5(arr) {
     if(arr.length==0){
         return null
-    } else {
-    let maxElement = arr[0].length
+    } 
+    let maxElement = arr[0]
+
     for(let i=1;i<arr.length;i++){
-         if(arr[i].length>maxElement) {
-            maxElement = arr[i].length
-            j = i
+         if(arr[i].length>maxElement.length) {
+            maxElement = arr[i]
         } 
     }
-    return arr[j]
+    return maxElement
     } 
-}
+
 console.log(fun5(arr))
